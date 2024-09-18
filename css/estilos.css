@@ -1,0 +1,383 @@
+html, body {
+    background-color: #E5E5E5;
+    font-family: 'Manjari', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 90px;
+}
+
+.item-menu {
+    display: flex;
+    padding: 10px;
+}
+
+
+.right-menu {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos de la derecha */
+}
+
+.black-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    width: 95%;
+}
+
+.black-line-small {
+    border: none;
+    height: 1px;
+    background-color: black;
+    width: 60%;
+}
+
+
+.item-menu a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.25rem;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 15%;
+}
+
+.info-personal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer {
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.gustavo-forcherio {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.backend-developer,
+.estudiante-de-licenciatura {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.yo-icon {
+    border-radius: 50%;
+}
+
+.texto-contacto {
+    padding-left: 10%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Espacio entre las secciones */
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Manjari', sans-serif;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 800px;
+}
+
+.title {
+    font-size: 4rem;
+    padding-bottom: 1.2rem;
+}
+
+.text-contact {
+    font-size: 1.125rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.form-contacto {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;  
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #eeeed8; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+.form-contacto button {
+    padding: 0.75rem 1rem; /* Agregar padding a los costados */
+    font-size: 1rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Hacer que el botón ocupe todo el ancho */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.form-contacto button:hover {
+    background-color: #011224;
+}
+
+
+@media (max-width: 800px) {
+    .body {
+        flex-direction: column; /* Cambiar la dirección del flex a columna */
+        align-items: center; /* Centrar los elementos en la columna */
+        padding: 2%;
+    }
+
+    .texto-contacto, .form-contacto {
+        width: 100%; /* Asegurarse de que los elementos ocupen todo el ancho */
+        text-align: center; /* Centrar el texto dentro de estos elementos */
+        padding: 2%;
+    }
+
+    .section {
+        text-align: center; /* Centrar el texto dentro de las secciones */
+    }
+
+    .form-contacto .section {
+        padding: 0% 3%;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .title {
+        font-size: 1.4rem; /* Ajustar el tamaño de la fuente del título */
+        font-weight: bold;
+    }
+
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem; /* Espacio entre las secciones */
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem; /* Espacio entre las columnas */
+}
+
+.experiencia, .educacion-capacitaciones {
+    flex: 1;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 800px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experiencia, .educacion-capacitaciones {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+ul {
+    list-style-type: none; /* Eliminar los puntos de las listas */
+    padding: 0; /* Eliminar el padding por defecto */
+}
+
+li {
+    margin-bottom: 1rem; /* Añadir un margen inferior para separar los elementos de la lista */
+}
+
+.item-experiencia, .item-educacion {
+    font-weight: bold;
+}
+
+.download-cv {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 5%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 88px;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en pantallas pequeñas */
+}
+
+.card {
+    width: 400px;
+    height: 470px;
+    background: #FAFAF5;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 2px #E6E6E6 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para efecto de tarjeta */
+}
+
+.card-image {
+    width: 100%;
+    height: 33%;
+    object-fit: cover;
+    background: linear-gradient(0deg, rgba(232, 207, 16, 0.40) 0%, rgba(232, 207, 16, 0.40) 100%);
+    border-bottom: 1px solid black;
+}
+
+.card-title {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+.card-description {
+    width: 341px;
+    text-align: center;
+    color: #6D6D6D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 800px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 395px;
+    }
+
+
+    .card-description {
+        width: 100%;
+    }
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #e5e5e5;
+        padding: 0px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-left: 5%;
+    }
+
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .right-menu {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .item-menu a {
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .footer-content {
+        padding: 0% 2%;
+    }
+
+    .body {
+        gap: 5%;
+    }
+}

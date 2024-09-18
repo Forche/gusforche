@@ -6,43 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Forcherio</title>
     <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manjari:wght@400&display=swap" />
+
 </head>
 
 <body>
     <header>
-        <h1>Portfolio Gustavo Forcherio</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre Mi</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="curriculum.html">Curriculum</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li class="item-menu"><a href="index.html">Inicio</a></li>
+                <div class="right-menu">
+                    <li class="item-menu"><a href="sobremi.html">Sobre Mi</a></li>
+                    <li class="item-menu"><a href="servicios.html">Servicios</a></li>
+                    <li class="item-menu"><a href="portafolio.html">Proyectos</a></li>
+                    <li class="item-menu"><a href="contacto.html">Contacto</a></li>
+                </div>
             </ul>
         </nav>
+        <hr class="black-line">
     </header>
-    <main>
-        <h2>Contacto</h2>
-        <div>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text">
-            <br>
-            <label for="mail">Mail</label>
-            <input id="mail" type="text">
-            <br>
-            <label for="comentario">Comentario</label>
-            <textarea name="comentario" id="comentario"></textarea>
-            <br>
-            <button>Enviar!</button>
-            <br>
-            <div><a href="https://www.linkedin.com/in/gustavo-forcherio/" target="_blank">
-                    <img src="./img/linkedin.png" alt="Logo Linked In" width="30" height="30"> Linked In
+    <main class="body">
+        <div class="texto-contacto">
+            <div class="section">
+                <div class="title">Contactame!</div>
+                <div class="text-contact">Si te gustó lo que viste y querés charlar sobre un proyecto, una idea
+                    copada o hacerme una consulta, ¡mandame un mensaje!</div>
+            </div>
+            <div class="section">
+                <div class="subtitle">Email</div>
+                <div class="text-contact">gforcherio@uade.edu.ar</div>
+            </div>
+            <div class="section">
+                <div class="subtitle">Redes</div>
+                <a href="https://www.linkedin.com/in/gustavo-forcherio/" target="_blank">
+                    <div class="text-contact">Linked In</div>
+                </a>
+                <a href="https://github.com/Forche" target="_blank">
+                    <div class="text-contact">Github</div>
                 </a>
             </div>
         </div>
+        <div class="form-contacto">
+            <div class="section">
+                <div class="subtitle">Nombre</div>
+                <input type="text">
+            </div>
+            <div class="section">
+                <div class="subtitle">Email</div>
+                <input type="text">
+            </div>
+            <div class="section">
+                <div class="subtitle">Mensaje</div>
+                <textarea name="comentario"></textarea>
+            </div>
+            <div class="section">
+                <button>Enviar!</button>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <hr class="black-line">
+        <div class="footer-content">
+            <div class="derechos-reservados">Derechos reservados</div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gustavo-forcherio/" target="_blank"><img class="linkedin-icon"
+                        alt="" src="./img/LinkedIn.svg"></a>
+                <a href="https://github.com/Forche" target="_blank"><img class="mark-github-icon" alt=""
+                        src="./img/github.svg"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

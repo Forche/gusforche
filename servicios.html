@@ -6,33 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Forcherio</title>
     <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manjari:wght@400&display=swap" />
+
 </head>
 
 <body>
     <header>
-        <h1>Portfolio Gustavo Forcherio</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre Mi</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="curriculum.html">Curriculum</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li class="item-menu"><a href="index.html">Inicio</a></li>
+                <div class="right-menu">
+                    <li class="item-menu"><a href="sobremi.html">Sobre Mi</a></li>
+                    <li class="item-menu"><a href="servicios.html">Servicios</a></li>
+                    <li class="item-menu"><a href="portafolio.html">Proyectos</a></li>
+                    <li class="item-menu"><a href="contacto.html">Contacto</a></li>
+                </div>
             </ul>
         </nav>
+        <hr class="black-line">
     </header>
-    <main>
-        <h2>Servicios</h2>
-        <dl>
-            <dt>Desarrollo de APIs y Backend</dt>
-            <dd>Creación de Backend y APIs, para consumir desde el front de una aplicación, incluyendo el guardado de
-                datos en una BD. Puede ser tanto On Premise, como Cloud</dd>
-            <dt>Desarrollo de Sitio Web Estatico</dt>
-            <dd>Creación de Sitio Web, donde el usuario puede consultar información sobre su negocio y contactarse.</dd>
-        </dl>
+    <main class="vertical-container">
+        <h2 class="section-title">Servicios</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img class="card-image" src="./img/backend.png" />
+                <div class="card-title">Desarrollo de APIs y Backend</div>
+                <div class="card-description">
+                    Creación de Backend y APIs, para consumir desde el front de una aplicación, incluyendo el guardado
+                    de
+                    datos en una BD. Puede ser tanto On Premise, como Cloud
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="./img/sitiowebestatico.jpg" />
+                <div class="card-title">Desarrollo de Sitio Web Estatico</div>
+                <div class="card-description">
+                    Creación de Sitio Web, donde el usuario puede consultar información sobre su negocio y contactarse.
+                </div>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <hr class="black-line">
+        <div class="footer-content">
+            <div class="derechos-reservados">Derechos reservados</div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gustavo-forcherio/" target="_blank"><img class="linkedin-icon"
+                        alt="" src="./img/LinkedIn.svg"></a>
+                <a href="https://github.com/Forche" target="_blank"><img class="mark-github-icon" alt=""
+                        src="./img/github.svg"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
